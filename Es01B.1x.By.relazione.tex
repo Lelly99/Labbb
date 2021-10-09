@@ -21,14 +21,18 @@
 
 \subsection*{2.d Accensione diodo}
 
-La tensione di alimentazione \`e stata variata nell intervallo tra $xx\,\mathrm{V}$ e $yy\,\mathrm{V}$
+La tensione di alimentazione \`e stata variata nell intervallo tra $1\,\mathrm{V}$ e $5\,\mathrm{V}$
 
-
+La luminosit\`a varia in maniera proporzionale alla differenza di potenziale applicata una volta superata la tensione di accensione, differente in base al colore. \\
+Led Rosso: $1.55\,\mathrm{V}$ \pm $0.05\,\mathrm{V}$ \\
+Led Giallo: $1.65\,\mathrm{V}$ \pm $0.05\,\mathrm{V}$ \\
+Led Verde: $2.0\,\mathrm{V}$ \pm $0.1\,\mathrm{V}$ \\
+Led Bianco: $2.30\,\mathrm{V}$ \pm $0.05\,\mathrm{V}$ \\
+Led Rosso: $2.35\,\mathrm{V}$ \pm $0.05\,\mathrm{V}$ \\
 \vspace{0.5cm}
-\framebox(400,30){Inserire commento sulla luminosit\`a del diodo in funzione della tenione e per diversi colori.}
 
 \subsection*{2.e Misura tensione}
-Utilizzando il multimetro si misura la tensione ai capi del diodo e si ottiene:
+Utilizzando il multimetro si misura la resistenza R1 = $218\,\mathrm{Ohm}$ \pm $2\,\mathrm{Ohm}$ e la tensione ai capi dei diodi Rosso, Blu e Verde e si ottiene:
 
 \begin{table}[h]
 \centering
@@ -36,13 +40,45 @@ Utilizzando il multimetro si misura la tensione ai capi del diodo e si ottiene:
 \hline 
 V+& $\sigma$ V+  & VD & $\sigma$ VD & I(R1)  & $\sigma$ I(R1) \\
 \hline 
-\exn & \exn & \exn & \exn & \exn &\exn \\
-\exn & \exn & \exn & \exn & \exn &\exn \\
-\exn & \exn & \exn & \exn & \exn &\exn \\
-\exn & \exn & \exn & \exn & \exn &\exn \\
+1.999 & 0.001 & 1.805 & 0.002 & 0.00 & 0.01 \\
+2.49 & 0.01 & 1.892 & 0.002 & 0.00 & 0.01 \\
+2.99 & 0.01 & 1.946 & 0.002 & 0.00 & 0.01 \\
+3.48 & 0.01 & 1.988 & 0.002 & 0.01 & 0.01 \\
+3.99 & 0.01 & 2.02 & 0.01 & 0.01 & 0.01 \\
 \hline 
 \end{tabular} 
-\caption{(2.e) Tensione e corrente ai capi del diodo. Tutte le tensioni in V.\label{t:par1}}
+\caption{(2.e) Tensione e corrente ai capi del diodo Rosso. Tutte le tensioni in V e le correnti in A.\label{t:par1}}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+V+& $\sigma$ V+  & VD & $\sigma$ VD & I(R1)  & $\sigma$ I(R1) \\
+\hline 
+1.998 & 0.001 & 1.997 & 0.002 & 0.00 & 0.01 \\
+2.49 & 0.01 & 2.31 & 0.01 & 0.00 & 0.01 \\
+2.99 & 0.01 & 2.44 & 0.01 & 0.00 & 0.01 \\
+3.49 & 0.01 & 2.55 & 0.01 & 0.00 & 0.01 \\
+4.00 & 0.01 & 2.65 & 0.01 & 0.01 & 0.01 \\
+\hline 
+\end{tabular} 
+\caption{(2.e) Tensione e corrente ai capi del diodo Verde. Tutte le tensioni in V e le correnti in A.\label{t:par1}}
+\end{table}
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+V+& $\sigma$ V+  & VD & $\sigma$ VD & I(R1)  & $\sigma$ I(R1) \\
+\hline 
+2.50 & 0.01 & 2.48 & 0.01 & 0.00 & 0.01 \\
+3.00 & 0.01 & 2.63 & 0.01 & 0.00 & 0.01 \\
+3.49 & 0.01 & 2.70 & 0.01 & 0.00 & 0.01 \\
+4.00 & 0.01 & 2.76 & 0.01 & 0.01 & 0.01 \\
+\hline 
+\end{tabular} 
+\caption{(2.e) Tensione e corrente ai capi del diodo Blu. Tutte le tensioni in V e le correnti in A.\label{t:par1}}
 \end{table}
 
 %=======================
@@ -81,7 +117,7 @@ La tensione massima ai capi del diodo misurata con i cursori risulta essere $V_{
 \subsection*{4.b Partitore con resistenze da 1k}
 
 
-Si realizza un partitore con resistenze da $1 \,\mathrm{k}\Omega$. Valori misurati con il multimetro: R1=$\exn \pm \exn \,\mathrm{k}\Omega$, R2=$\exn \pm \exn \,\mathrm{k}\Omega$
+Si realizza un partitore con resistenze da $1 \,\mathrm{k}\Omega$. Valori misurati con il multimetro: R1=$993 \pm $8 Ohm, R2=$995 \pm $8 Ohm.
 
 
 \begin{table}[h]
@@ -90,22 +126,22 @@ Si realizza un partitore con resistenze da $1 \,\mathrm{k}\Omega$. Valori misura
 \hline 
 VIN& $\sigma$ VIN  &VOUT	 & $\sigma$ VOUT& VOUT/VIN & $\sigma$ VOUT/VIN \\
 \hline 
-\exn & \exn & \exn & \exn & \exn &\exn \\
-\exn & \exn & \exn & \exn & \exn &\exn \\
-\exn & \exn & \exn & \exn & \exn &\exn \\
-\exn & \exn & \exn & \exn & \exn &\exn \\
+0.999 & 0.005 & 0.500 & 0.002 & 0.500 & 0.001 \\
+1.995 & 0.005 & 0.999 & 0.005 & 0.501 & 0.001 \\
+2.99 & 0.02 & 1.500 & 0.007 & 0.50 & 0.02 \\
+3.99 & 0.02 & 2.00 & 0.01 & 0.50 & 0.03 \\
+4.98 & 0.03 & 2.50 & 0.01 & 0.50 & 0.03 \\
 \hline 
 \end{tabular} 
 \caption{(4.b) Partitore di tensione con resistenze da circa 1k. Tutte le tensioni in V.\label{t:par1}}
 \end{table}
 
-
-\framebox(400,30){Inserire commento sul confronto tra valori misurati ed attesi.}
+I valori misurati sono coerenti con quelli attesi in quanto il coefficiente V(out)/V(in) è proporzionale a R2/(R1+R2) = $0.50 \pm $0.02 Ohm.
 
 
 \subsection*{4.d Partitore con resistenze da circa 1M}
 \par
-Si realizza un partitore con resistenze da $1 \,\mathrm{M}\Omega$. Valori misurati con il multimetro: R1=$\exn \pm \exn \,\mathrm{M}\Omega$, R2=$\exn \pm \exn \,\mathrm{M}\Omega$.
+Si realizza un partitore con resistenze da $1 \,\mathrm{M}\Omega$. Valori misurati con il multimetro: R1=$1.007 \pm $0.008 \,\mathrm{M}\Omega$, R2=$1.010 \pm $0.08 \,\mathrm{M}\Omega$.
 
 
 \begin{table}[h]
@@ -114,32 +150,32 @@ Si realizza un partitore con resistenze da $1 \,\mathrm{M}\Omega$. Valori misura
 \hline 
 VIN& $\sigma$ VIN  &VOUT	 & $\sigma$ VOUT& VOUT/VIN & $\sigma$ VOUT/VIN \\
 \hline 
-\exn & \exn & \exn & \exn & \exn &\exn \\
-\exn & \exn & \exn & \exn & \exn &\exn \\
-\exn & \exn & \exn & \exn & \exn &\exn \\
-\exn & \exn & \exn & \exn & \exn &\exn \\
+0.999 & 0.005 & 0.00 & 0.01 & 0.00 & 0.01 \\
+1.996 & 0.005 & 0.00 & 0.001 & 0.00 & 0.01 \\
+2.99 & 0.02 & 0.00 & 0.01 & 0.00 & 0.01 \\
+3.99 & 0.02 & 0.001 & 0.005 & 0.00 & 0.02 \\
+4.99 & 0.03 & 0.001 & 0.005 & 0.00 & 0.03 \\
 \hline 
 \end{tabular} 
 \caption{(4.d) Partitore di tensione con resistenze da circa 1M. Tutte le tensioni in V.\label{t:par2}}
 \end{table}
 
-
-\framebox(400,30){Inserire commento sul confronto tra valori misurati ed attesi.}
-
+I valori misurati non rispecchiano l'andamento effettivo in quanto il partitore impiegato sfrutta resistenze dai valori prossimi a quella interna del multimetro ($10 MOhm).
 
 
-\subsection*{4.e Resistenza di ingresso dell' AD2}
+
+\subsection*{4.e Resistenza di ingresso del multimetro}
 Usando il modello mostrato nella scheda si ottiene
 \[ \frac{R_1}{R_T} =  \frac{V_{IN}}{V_{OUT}} - (1 +  \frac{R_1}{R_2} )
 \]
 
 Con i dati con resistenze da 1k si ottiene
-\[ R_1/R_{IN} = \exn  \pm  \exn   \rightarrow  R_{IN} > \exn k\Omega
+\[ R_1/R_{IN} =  $0.001 \pm $0.001  \rightarrow  R_{IN} > \1 k\Omega
 \]
 
 
 Con i dati con resistenze da 1M si ottiene
-\[ R_1/R_{IN} = \exn  \pm  \exn   \rightarrow  R_{IN} = (\exn \pm  \exn)  M\Omega
+\[ R_1/R_{IN} = $0.10  \pm  &0.02   \rightarrow  R_{IN} = (\10 \pm  \2)  M\Omega
 \]
 
 \framebox(400,30){Inserire commento sulla sensibilit\`a sperimentale della misura.} 
